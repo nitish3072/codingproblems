@@ -10,6 +10,8 @@ public class LongestIncreasingSubsequence {
             computed[i] = 1;
             ar[i] = Integer.valueOf(ar1[i]);
         }
+        // max[i] = 1 + Max(LIS(j)) 0<j<i and array[i]>array[j]
+        // Else max[i] = 1
         for(int i=0;i<ar1.length;i++) {
             int max = 0;
             int value = 0;
