@@ -7,14 +7,9 @@ public class LongestCommonSubsequence {
         String[] ar2 = scanner.nextLine().split(",");
         int[][] finalArr = new int[ar1.length+1][ar2.length+1];
         for(int i = 1;i<ar1.length+1;i++) {
-            boolean altered = false;
             for(int j = 1;j<ar2.length+1;j++) {
-                if(altered) {
-                    finalArr[i][j] = finalArr[i][j-1];
-                } else if(ar1[i-1].equalsIgnoreCase(ar2[j-1]) ) {
-                    int max = Math.max(finalArr[i-1][j], finalArr[i][j-1]);
-                    finalArr[i][j] = max + 1;
-                    altered = true;
+                if(ar1[i-1].equalsIgnoreCase(ar2[j-1]) ) {
+                    finalArr[i][j] = finalArr[i-1][j-1] + 1;
                 } else {
                     int max = Math.max(finalArr[i-1][j], finalArr[i][j-1]);
                     finalArr[i][j] = max;
@@ -30,3 +25,8 @@ public class LongestCommonSubsequence {
         }
     }
 }
+
+/*
+A,G,G,T,A,B
+G,X,T,X,A,Y,B
+ */
