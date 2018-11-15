@@ -30,3 +30,4 @@ public class LongestCommonSubsequence {
 A,G,G,T,A,B
 G,X,T,X,A,Y,B
  */
+//https://www.youtube.com/watch?v=NnD96abizww
