@@ -11,8 +11,8 @@ public class MergeSortedArrays {
     public static void main(String[] args) {
         Scanner sc = new java.util.Scanner(System.in);
         int totalCases = sc.nextInt();
+        sc.nextLine();
         while (totalCases>0) {
-            sc.nextLine();
             sc.nextLine();
             String[] first = sc.nextLine().split(" ");
             String[] second = sc.nextLine().split(" ");
@@ -21,9 +21,13 @@ public class MergeSortedArrays {
             for(String l: first) {firstList.add(Integer.valueOf(l));}
             for(String l: second) {secondList.add(Integer.valueOf(l));}
             int i = 0;
-            int j =0;
+            int j = 0;
             while (i<firstList.size()) {
-                if(firstList.get(i)>secondList.get(j)) {
+                if(j>=secondList.size()) {
+                    secondList.add(j, firstList.get(i));
+                    i++;
+                    j++;
+                } else if(firstList.get(i)<=secondList.get(j)) {
                     j++;
                 } else {
                     secondList.add(j, firstList.get(i));
