@@ -8,6 +8,8 @@ import java.util.stream.Collectors;
  * https://practice.geeksforgeeks.org/problems/-rearrange-array-alternately/0/
  */
 
+// Using LinkedList and start re-arranging
+
 public class RearrangeArrayAlternately {
 
     public static void main(String[] args) {
