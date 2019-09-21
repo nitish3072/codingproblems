@@ -1,4 +1,4 @@
-import helpers.Heap;
+import helpers.MinHeap;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -22,7 +22,7 @@ public class KthSmallestElement {
                 arr[i] = Integer.valueOf(strs[i]);
             }
             int k = Integer.valueOf(reader.readLine());
-            Heap heap = new Heap(size);
+            MinHeap heap = new MinHeap(size);
             Arrays.stream(arr).forEach(heap::addElement);
             while (k-->1) {
                 heap.removeElement(0);
