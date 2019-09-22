@@ -40,8 +40,8 @@ public class LongestCommonSubstring {
             }
 
             // Now check if i element and j element of strings respectively are equal.
-            //          - If they are equal then add dpArray element of i-1 and j-1 with 1
-            //          - If they are not equal then dpArray dp array of i,j is zero
+            //          - If they are equal then add dpArray element at i-1 and j-1 with 1
+            //          - If they are not equal then dpArray at i,j is zero
             for(int i=1;i<len1;i++) {
                 for(int j=1;j<len2;j++) {
                     if(string1[i].equals(string2[j])) {
