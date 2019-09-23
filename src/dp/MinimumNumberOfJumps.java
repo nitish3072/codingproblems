@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 
 /**
  * https://practice.geeksforgeeks.org/problems/minimum-number-of-jumps/0
+ * https://1drv.ms/u/s!AsdF3i1OvApTvF_1rqiHADJhWk-D
  */
 public class MinimumNumberOfJumps {
     public static void main(String[] args) throws IOException {
