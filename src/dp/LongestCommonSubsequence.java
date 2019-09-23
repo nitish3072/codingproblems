@@ -22,6 +22,9 @@ public class LongestCommonSubsequence {
 
 
             //dpArray compute
+            // Take dp array to be one size larger on both sides from original len1 and len2
+            // Now for strings at i and j are equal that means we increase the diagonally opposite element from dpArray and increase it by one
+            // If not equal then we take max of upper element and left side element from dpArray
             int[][] dpArray = new int[len1+1][len2+1];
             for(int i=1;i<=len1;i++) {
                 for(int j=1;j<=len2;j++) {
