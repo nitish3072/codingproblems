@@ -1,5 +1,8 @@
 package leetcode.medium;
 
+/**
+ * https://leetcode.com/problems/partition-array-for-maximum-sum/
+ */
 public class PartitionArrayforMaximumSum {
 
     public int maxSumAfterPartitioning(int[] A, int K) {
