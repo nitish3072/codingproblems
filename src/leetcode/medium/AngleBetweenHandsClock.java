@@ -1,5 +1,8 @@
 package leetcode.medium;
 
+/**
+ * https://leetcode.com/problems/angle-between-hands-of-a-clock/submissions/
+ */
 public class AngleBetweenHandsClock {
 
     public double angleClock(int hour, int minutes) {
