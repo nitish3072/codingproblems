@@ -1,4 +1,4 @@
-package leetcode.april;
+package leetcode.april.easy;
 
 /**
  * https://leetcode.com/problems/palindrome-number/submissions/
