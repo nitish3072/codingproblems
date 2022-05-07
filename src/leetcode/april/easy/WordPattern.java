@@ -6,6 +6,7 @@ package leetcode.april.easy;
 public class WordPattern {
 
     public boolean wordPattern(String pattern, String s) {
+        // Storing the right letters in English alphabets
         String[] alphabets = new String[126];
         String[] sArray = s.split(" ");
         if(pattern.length()!=sArray.length) return false;
