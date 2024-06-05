@@ -7,9 +7,9 @@ import java.util.stream.Collectors;
 public class RainWaterTrapped {
 
     public int trap(final List<Integer> A) {
-        if (A == null || A.size() == 0) {
-            return 0;
-        }
+            if (A == null || A.size() == 0) {
+                return 0;
+            }
         int left = 0; int right = A.size() - 1;
         int maxLeft = 0; int maxRight = 0;
         int totalWater = 0;
