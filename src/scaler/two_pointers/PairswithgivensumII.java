@@ -31,7 +31,7 @@ public class PairswithgivensumII {
                         jSum++;
                         j--;
                     }
-                    ans = ((ans % modulo) + ((iSum % modulo) * (jSum % modulo)) % modulo) % modulo;
+                    ans = ((ans % modulo) + ((long) (iSum % modulo) * (jSum % modulo)) % modulo) % modulo;
                 }
             }
         }
